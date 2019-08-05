@@ -91,7 +91,7 @@ def is_in_viewport(monitors, xpos, ypos):
 
 def move_window(newxpos, newypos):
     subprocess.call(['xdotool', 'getactivewindow', 'windowmove',
-                     str(newxpos), str(newypos)])
+                     str(newxpos), str(newypos), 'windowraise'])
 
 
 def get_mouse_position():
